@@ -1,0 +1,97 @@
+// bower:scss
+@import "bower_components/bootstrap-grid-sass/bootstrap-grid-sass.scss";
+// endbower
+
+
+
+// modules & sections
+
+@import "modules/sprite";
+@import "functions";
+@import "reset";
+@import "fonts";
+@import "variables";
+
+@import "sections/header";
+@import "sections/head-section";
+@import "sections/design-section";
+@import "sections/features-section";
+@import "sections/responsive-section";
+@import "sections/reviews-section";
+
+
+
+
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+
+html {
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+  line-height: 1.2;
+  span {
+    color: $orange;
+    font-size: 16px;
+    font-family: $exomedium;
+  }
+  h1 {
+    font-size: 60px;
+    font-family: $exothin;
+    color: $black;
+  }
+  h2 {
+    font-size: 40px;
+    font-family: $exomedium;
+    color: $black;
+    font-weight: lighter;
+  }
+  h3 {
+    font-size: 22px;
+    color: $black;
+    font-family: $exomedium;
+  }
+
+  p {
+    font-family: $exomedium;
+    color: $grey;
+    font-size: 16px;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $orange;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+h6 {
+  font-size: 16px;
+  font-family: $exomedium;
+  color: $orange;
+}
+
+

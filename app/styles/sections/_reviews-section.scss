@@ -1,0 +1,37 @@
+.reviews-section {
+  background-image: url(../../images/background2.png);
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  padding-top: 110px;
+  padding-bottom: 90px;
+  min-height: 650px;
+}
+.reviews-section .container {
+  display: flex;
+  align-items: stretch;
+}
+.reviews-section-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 330px;
+  margin: auto;
+  img {
+    margin: 0 auto 20px;
+  }
+  h3 {
+    margin: 0 auto 10px;
+    color: #ffffff;
+  }
+  span {
+    margin: 0 auto 38px;
+    font-weight: bold;
+  }
+  p {
+    text-align: center;
+    color: #A6A7AA;
+    font-family: $exoregularitalic;
+  }
+}

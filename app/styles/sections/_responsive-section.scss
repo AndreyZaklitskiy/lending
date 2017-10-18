@@ -1,0 +1,19 @@
+.responsive-section .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .trapezoid {
+    border-bottom: 500px solid $orange2;
+    border-right: 450px solid transparent;
+    height: 0;
+    width: 580px;
+    margin-right: auto;
+  }
+  .mackbook-image {
+    position: absolute;
+  }
+  .content-block {
+    margin-left: auto;
+    width: 480px;
+  }
+}

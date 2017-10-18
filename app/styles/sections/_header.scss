@@ -1,0 +1,39 @@
+header  {
+  background-image: url(../../images/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  padding-top: 225px;
+  padding-bottom: 225px;
+  text-align: center;
+  h1 {
+    display: block;
+    font-weight: lighter;
+    text-align: center;
+    max-width: 714px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  .play {
+    display: inline-block;
+    @include sprite($play-icon);
+    margin-bottom: 40px;
+  }
+  .try-btn {
+    @extend .btn;
+    height: 50px;
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-family: $exoregular;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  p {
+    font-size: 14px;
+  }
+}

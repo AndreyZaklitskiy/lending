@@ -1,0 +1,178 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$airplane-icon-name: 'airplane-icon';
+$airplane-icon-x: 0px;
+$airplane-icon-y: 0px;
+$airplane-icon-offset-x: 0px;
+$airplane-icon-offset-y: 0px;
+$airplane-icon-width: 67px;
+$airplane-icon-height: 67px;
+$airplane-icon-total-width: 158px;
+$airplane-icon-total-height: 135px;
+$airplane-icon-image: '../images/sprite.png';
+$airplane-icon: (0px, 0px, 0px, 0px, 67px, 67px, 158px, 135px, '../images/sprite.png', 'airplane-icon', );
+$bulb-icon-name: 'bulb-icon';
+$bulb-icon-x: 68px;
+$bulb-icon-y: 0px;
+$bulb-icon-offset-x: -68px;
+$bulb-icon-offset-y: 0px;
+$bulb-icon-width: 67px;
+$bulb-icon-height: 67px;
+$bulb-icon-total-width: 158px;
+$bulb-icon-total-height: 135px;
+$bulb-icon-image: '../images/sprite.png';
+$bulb-icon: (68px, 0px, -68px, 0px, 67px, 67px, 158px, 135px, '../images/sprite.png', 'bulb-icon', );
+$cursor-icon-name: 'cursor-icon';
+$cursor-icon-x: 136px;
+$cursor-icon-y: 0px;
+$cursor-icon-offset-x: -136px;
+$cursor-icon-offset-y: 0px;
+$cursor-icon-width: 22px;
+$cursor-icon-height: 22px;
+$cursor-icon-total-width: 158px;
+$cursor-icon-total-height: 135px;
+$cursor-icon-image: '../images/sprite.png';
+$cursor-icon: (136px, 0px, -136px, 0px, 22px, 22px, 158px, 135px, '../images/sprite.png', 'cursor-icon', );
+$dribbble-icon-name: 'dribbble-icon';
+$dribbble-icon-x: 136px;
+$dribbble-icon-y: 23px;
+$dribbble-icon-offset-x: -136px;
+$dribbble-icon-offset-y: -23px;
+$dribbble-icon-width: 20px;
+$dribbble-icon-height: 21px;
+$dribbble-icon-total-width: 158px;
+$dribbble-icon-total-height: 135px;
+$dribbble-icon-image: '../images/sprite.png';
+$dribbble-icon: (136px, 23px, -136px, -23px, 20px, 21px, 158px, 135px, '../images/sprite.png', 'dribbble-icon', );
+$facebook-icon-name: 'facebook-icon';
+$facebook-icon-x: 136px;
+$facebook-icon-y: 81px;
+$facebook-icon-offset-x: -136px;
+$facebook-icon-offset-y: -81px;
+$facebook-icon-width: 11px;
+$facebook-icon-height: 21px;
+$facebook-icon-total-width: 158px;
+$facebook-icon-total-height: 135px;
+$facebook-icon-image: '../images/sprite.png';
+$facebook-icon: (136px, 81px, -136px, -81px, 11px, 21px, 158px, 135px, '../images/sprite.png', 'facebook-icon', );
+$googleplus-icon-name: 'googleplus-icon';
+$googleplus-icon-x: 136px;
+$googleplus-icon-y: 45px;
+$googleplus-icon-offset-x: -136px;
+$googleplus-icon-offset-y: -45px;
+$googleplus-icon-width: 20px;
+$googleplus-icon-height: 17px;
+$googleplus-icon-total-width: 158px;
+$googleplus-icon-total-height: 135px;
+$googleplus-icon-image: '../images/sprite.png';
+$googleplus-icon: (136px, 45px, -136px, -45px, 20px, 17px, 158px, 135px, '../images/sprite.png', 'googleplus-icon', );
+$picture-icon-name: 'picture-icon';
+$picture-icon-x: 0px;
+$picture-icon-y: 68px;
+$picture-icon-offset-x: 0px;
+$picture-icon-offset-y: -68px;
+$picture-icon-width: 67px;
+$picture-icon-height: 67px;
+$picture-icon-total-width: 158px;
+$picture-icon-total-height: 135px;
+$picture-icon-image: '../images/sprite.png';
+$picture-icon: (0px, 68px, 0px, -68px, 67px, 67px, 158px, 135px, '../images/sprite.png', 'picture-icon', );
+$play-icon-name: 'play-icon';
+$play-icon-x: 68px;
+$play-icon-y: 68px;
+$play-icon-offset-x: -68px;
+$play-icon-offset-y: -68px;
+$play-icon-width: 59px;
+$play-icon-height: 59px;
+$play-icon-total-width: 158px;
+$play-icon-total-height: 135px;
+$play-icon-image: '../images/sprite.png';
+$play-icon: (68px, 68px, -68px, -68px, 59px, 59px, 158px, 135px, '../images/sprite.png', 'play-icon', );
+$twitter-icon-name: 'twitter-icon';
+$twitter-icon-x: 136px;
+$twitter-icon-y: 63px;
+$twitter-icon-offset-x: -136px;
+$twitter-icon-offset-y: -63px;
+$twitter-icon-width: 19px;
+$twitter-icon-height: 17px;
+$twitter-icon-total-width: 158px;
+$twitter-icon-total-height: 135px;
+$twitter-icon-image: '../images/sprite.png';
+$twitter-icon: (136px, 63px, -136px, -63px, 19px, 17px, 158px, 135px, '../images/sprite.png', 'twitter-icon', );
+$spritesheet-width: 158px;
+$spritesheet-height: 135px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($airplane-icon, $bulb-icon, $cursor-icon, $dribbble-icon, $facebook-icon, $googleplus-icon, $picture-icon, $play-icon, $twitter-icon, );
+$spritesheet: (158px, 135px, '../images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
