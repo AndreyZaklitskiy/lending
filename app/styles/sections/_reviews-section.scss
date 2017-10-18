@@ -1,4 +1,5 @@
-.reviews-section {
+.reviews-section .container {
+  position: relative;
   background-image: url(../../images/background2.png);
   background-position: center;
   -webkit-background-size: cover;
@@ -7,31 +8,69 @@
   padding-top: 110px;
   padding-bottom: 90px;
   min-height: 650px;
-}
-.reviews-section .container {
-  display: flex;
-  align-items: stretch;
-}
-.reviews-section-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 330px;
-  margin: auto;
-  img {
-    margin: 0 auto 20px;
+  justify-content: space-around;
+  //&::before {
+  //  content: '';
+  //  width: 100%;
+  //  height: 100%;
+  //  position: absolute;
+  //  left: 0;
+  //  top: 0;
+  //  background-color: #000;
+  //  opacity: .85;
+  //}
+  .reviews-section-block {
+    display: flex;
+    align-items: stretch;
+    .review {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 330px;
+      margin: auto;
+      img {
+        margin: 0 auto 20px;
+      }
+      h3 {
+        margin: 0 auto 10px;
+        color: #ffffff;
+      }
+      span {
+        margin: 0 auto 38px;
+        font-weight: bold;
+      }
+      p {
+        text-align: center;
+        color: #A6A7AA;
+        font-family: $exoregularitalic;
+      }
+    }
   }
-  h3 {
-    margin: 0 auto 10px;
-    color: #ffffff;
-  }
-  span {
-    margin: 0 auto 38px;
-    font-weight: bold;
-  }
-  p {
-    text-align: center;
-    color: #A6A7AA;
-    font-family: $exoregularitalic;
+  .partners {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    .hits-logo {
+      display: inline-block;
+      @include sprite($hits);
+    }
+    .rvlvr-logo {
+      display: inline-block;
+      @include sprite($rvlvr);
+    }
+    .eatfindr-logo {
+      display: inline-block;
+      @include sprite($eatfindr);
+    }
+    .igor-logo {
+      display: inline-block;
+      @include sprite($igor);
+    }
+    .sienna-logo {
+      display: inline-block;
+      @include sprite($sienna);
+    }
   }
 }
