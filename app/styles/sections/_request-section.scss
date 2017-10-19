@@ -1,0 +1,42 @@
+.request-section {
+  background-color: #323969;
+  .container {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      padding-bottom: 15px;
+    }
+    h2 {
+      color: #fff;
+      padding-bottom: 90px;
+    }
+    form {
+      padding-bottom: 50px;
+        input {
+        width: 260px;
+        height: 45px;
+        background-color: #464c77;
+        border: 1px solid #999cb4;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color: #f6f5f3;
+        font-family: $exoregular;
+        font-size: 16px;
+          padding-left: 10px;
+      }
+      .btn {
+        display: inline-block;
+        width: 260px;
+        height: 45px;
+        line-height: 42px;
+      }
+      p {
+        font-family: $exoregular;
+      }
+    }
+  }
+}
