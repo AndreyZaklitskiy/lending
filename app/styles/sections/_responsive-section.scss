@@ -2,6 +2,8 @@
   position: relative;
   display: flex;
   align-items: center;
+  margin-left: 0;
+  padding-left: 0;
   .trapezoid {
     border-bottom: 500px solid $orange2;
     border-right: 450px solid transparent;
@@ -13,7 +15,7 @@
     position: absolute;
   }
   .content-block {
-    margin-left: auto;
+    @extend .content-block-stiles;
     width: 480px;
   }
 }

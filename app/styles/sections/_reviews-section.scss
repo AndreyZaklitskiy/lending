@@ -34,6 +34,7 @@
       align-items: center;
       max-width: 330px;
       margin: auto;
+      z-index: 10;
       img {
         margin: 0 auto 20px;
       }
@@ -56,6 +57,7 @@
     margin-top: auto;
     display: flex;
     justify-content: space-around;
+    z-index: 10;
     .hits-logo {
       display: inline-block;
       @include sprite($hits);
