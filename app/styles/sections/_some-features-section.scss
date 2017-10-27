@@ -26,3 +26,24 @@
 }
 
 
+@media (max-width: 768px) {
+  .some-features-section {
+    .container {
+      min-height: 600px;
+      img {
+        width: 90%;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .some-features-section {
+    .container {
+      padding-top: 30px;
+      min-height: 450px;
+    }
+  }
+}

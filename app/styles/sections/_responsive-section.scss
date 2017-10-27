@@ -9,13 +9,60 @@
     border-right: 450px solid transparent;
     height: 0;
     width: 580px;
-    margin-right: auto;
   }
   .mackbook-image {
     position: absolute;
   }
   .content-block {
-    @extend .content-block-stiles;
+    h1 {
+      font-size: 60px;
+    }
     width: 480px;
+  }
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .responsive-section .container {
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .responsive-section .container {
+    min-height: 400px;
+    .trapezoid {
+      display: none;
+    }
+    .content-block {
+      padding-left: 50px;
+      h2 {
+        padding-bottom: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .responsive-section .container {
+    .content-block {
+      margin-left: 0;
+    }
+    .mackbook-image {
+      display: none;
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .responsive-section .container {
+    .content-block {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 }

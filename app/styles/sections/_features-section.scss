@@ -12,8 +12,11 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 15px;
+    z-index: 10;
   }
   h2 {
+    z-index: 10;
+    font-size: 40px;
     text-align: center;
     padding-bottom: 90px;
   }
@@ -41,23 +44,24 @@
 }
 .features-block {
   display: flex;
-}
-.features-block-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 26px;
-  margin-right: 26px;
-  h3 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+  .features-block-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 26px;
+    margin-right: 26px;
+    h3 {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      line-height: 1.4;
+    }
   }
-  p {
-    text-align: center;
-    line-height: 1.4;
-  }
 }
+
 
 .picture {
   &::before {
@@ -78,5 +82,38 @@
     content: '';
     display: inline-block;
     @include sprite($bulb-icon);
+  }
+}
+
+
+
+
+@media (max-width: 575px) {
+  .features-section .container {
+    h2 {
+      padding-bottom: 30px;
+    }
+  }
+  .features-block {
+    flex-direction: column;
+    .features-block-item {
+      padding-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .features-section .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .pens-img {
+      display: none;
+    }
+    .earphones-img {
+      display: none;
+    }
+    .cup-img {
+      display: none;
+    }
   }
 }

@@ -23,12 +23,20 @@
   }
 }
 .content-block {
-  @extend .content-block-stiles;
-  margin-left: 100px;
+  background-color: transparent;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 50px;
   span {
     padding-bottom: 15px;
   }
   h2 {
+    font-size: 40px;
     padding-bottom: 45px;
     span {
       font-size: 40px;
@@ -40,5 +48,25 @@
     &:last-child {
       padding-bottom: 0;
     }
+  }
+}
+
+
+
+
+@media (max-width: 480px) {
+  .design-section .container {
+    .triangle {
+      display: none;
+    }
+    .content-block {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      margin-left: 0;
+      h2 {
+        font-size: 30px;
+      }
+    }
+
   }
 }

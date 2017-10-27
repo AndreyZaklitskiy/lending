@@ -35,6 +35,8 @@
       max-width: 330px;
       margin: auto;
       z-index: 10;
+      padding-right: 5px;
+      padding-left: 5px;
       img {
         margin: 0 auto 20px;
       }
@@ -77,6 +79,22 @@
     .sienna-logo {
       display: inline-block;
       @include sprite($sienna);
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .reviews-section .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .reviews-section-block {
+      flex-direction: column;
+      .review {
+        padding-top: 20px;
+      }
+    }
+    .partners {
+      display: none;
     }
   }
 }
