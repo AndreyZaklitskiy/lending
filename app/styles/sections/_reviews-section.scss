@@ -24,65 +24,38 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  .reviews-section-block {
+
+}
+.reviews-section-block {
+  display: flex;
+  align-items: stretch;
+  .review {
     display: flex;
-    align-items: stretch;
-    .review {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 330px;
-      margin: auto;
-      z-index: 10;
-      padding-right: 5px;
-      padding-left: 5px;
-      img {
-        margin: 0 auto 20px;
-      }
-      h3 {
-        margin: 0 auto 10px;
-        color: #ffffff;
-      }
-      span {
-        margin: 0 auto 38px;
-        font-weight: bold;
-      }
-      p {
-        text-align: center;
-        color: #A6A7AA;
-        font-family: $exoregularitalic;
-      }
-    }
-  }
-  .partners {
-    margin-top: auto;
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
+    max-width: 330px;
+    margin: auto;
     z-index: 10;
-    .hits-logo {
-      display: inline-block;
-      @include sprite($hits);
+    padding-right: 5px;
+    padding-left: 5px;
+    img {
+      margin: 0 auto 20px;
     }
-    .rvlvr-logo {
-      display: inline-block;
-      @include sprite($rvlvr);
+    h3 {
+      margin: 0 auto 10px;
+      color: #ffffff;
     }
-    .eatfindr-logo {
-      display: inline-block;
-      @include sprite($eatfindr);
+    span {
+      margin: 0 auto 38px;
+      font-weight: bold;
     }
-    .igor-logo {
-      display: inline-block;
-      @include sprite($igor);
-    }
-    .sienna-logo {
-      display: inline-block;
-      @include sprite($sienna);
+    p {
+      text-align: center;
+      color: #A6A7AA;
+      font-family: $exoregularitalic;
     }
   }
 }
-
 
 
 
@@ -91,14 +64,11 @@
   .reviews-section .container {
     padding-top: 30px;
     padding-bottom: 30px;
-    .reviews-section-block {
-      flex-direction: column;
-      .review {
-        padding-top: 20px;
-      }
-    }
-    .partners {
-      display: none;
+  }
+  .reviews-section-block {
+    flex-direction: column;
+    .review {
+      padding-top: 20px;
     }
   }
 }
