@@ -1,6 +1,7 @@
 .request-section {
   background-color: #323969;
   .container {
+    position: relative;
     margin-left: 0;
     margin-right: 0;
     padding: 100px 0 80px;
@@ -8,49 +9,72 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    span {
-      padding-bottom: 15px;
-    }
-    h2 {
-      color: #fff;
-      padding-bottom: 90px;
-    }
-    form {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      padding-bottom: 50px;
-      input {
-        margin-top: 20px;
-        margin-left: 15px;
-        margin-right: 15px;
-        height: 45px;
-        background-color: #464c77;
-        border: 1px solid #999cb4;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
+  }
+  span {
+    padding-bottom: 15px;
+  }
+  h2 {
+    color: #fff;
+    padding-bottom: 90px;
+  }
+  form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    input {
+      margin-top: 20px;
+      margin-left: 15px;
+      margin-right: 15px;
+      height: 45px;
+      background-color: #464c77;
+      border: 1px solid #999cb4;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      color: #f6f5f3;
+      font-family: $exoregular;
+      font-size: 16px;
+      padding-left: 10px;
+      outline: none;
+      &::placeholder {
         color: #f6f5f3;
-        font-family: $exoregular;
-        font-size: 16px;
-        padding-left: 10px;
       }
-      .btn {
-        margin-top: 20px;
-        margin-left: 15px;
-        margin-right: 15px;
-        min-width: 187px;
-        height: 45px;
-        line-height: 42px;
-        font-family: $exoregular;
-      }
-      p {
-        font-family: $exoregular;
-      }
+    }
+    .btn {
+      margin-top: 20px;
+      margin-left: 15px;
+      margin-right: 15px;
+      min-width: 187px;
+      height: 45px;
+      line-height: 42px;
+      font-family: $exoregular;
+    }
+    p {
+      font-family: $exoregular;
     }
   }
 }
+
+.pointer {
+  position: absolute;
+  top: -30px;
+  right: -5px;
+  img {
+    position: absolute;
+    left: -60px;
+    display: inline-block;
+  }
+  p {
+    margin-left: -30px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+  }
+}
+
 
 @media (max-width: 992px) {
   .request-section {
@@ -60,8 +84,18 @@
       }
     }
   }
+  .pointer {
+    display: none;
+  }
 }
 
+@media (max-width: 768px) {
+  .request-section {
+    h2 {
+      padding-bottom: 30px;
+    }
+  }
+}
 
 @media (max-width: 480px) {
   .request-section {

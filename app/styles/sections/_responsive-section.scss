@@ -28,6 +28,9 @@
   .responsive-section .container {
     padding-right: 0;
     margin-right: 0;
+    .content-block {
+      padding-left: 40px;
+    }
   }
 }
 
@@ -63,6 +66,7 @@
     .content-block {
       padding-top: 20px;
       padding-bottom: 20px;
+      padding-left: 15px;
     }
   }
 }
